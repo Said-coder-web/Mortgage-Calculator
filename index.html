@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" size="32x23" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <div class="Mortgage">
+      <div class="content">
+        <h2 class="content__title">
+           Mortgage Calculator
+          <span class="button__clear">Clear All</span>
+        </h2>
+        <form>
+          <div>
+            <label for="mor">Mortgage Amount</label>
+            <div class="inp">
+              <input type="namber" name="Mortgage Amount" id="mor"><span>£</span>
+            </div>
+            <p>This Field is Required</p>
+          </div>
+          <div>
+            <label for="ter">Mortgage Term</label>
+            <div class="inp">
+              <input type="namber" name="Mortgage Amount" id="ter"><span>Years</span>
+            </div>
+            <p>This Field is Required</p>
+          </div>
+          <div>
+            <label for="int">Interest Rate</label>
+            <div class="inp">
+              <input type="namber" name="Mortgage Amount" id="int"><span>%</span>
+            </div>
+            <p>This Field is Required</p>
+          </div>
+        </form>
+        <form><span>Mortgage Type</span>
+          <div>
+            <input type="radio" name="ty" id="rep" checked>
+            <span class="custom-radio"></span>
+            <label for="rep">Repayment</label>
+          </div>
+          <div>
+            <input type="radio" name="ty" id="inter">
+            <span class="custom-radio"></span>
+            <label for="inter">Interest Only</label>
+          </div>
+        </form>
+        <button class="button__send"><img src="assets/images/icon-calculator.svg">Calculate Repayments</button>
+      </div>
+      <div class="content">
+        
+        <img src="assets/images/illustration-empty.svg" alt="image">
+        <h2 class="content__title">Results shown here</h2>
+        <p>
+          Complete the form and click “calculate repayments” to see whatyour monthly repayments would be.</p>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+</html>

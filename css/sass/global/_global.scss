@@ -1,0 +1,46 @@
+@use "../layout/variabals" as *;
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  // font-family: ;
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  background: hsl(202, 86%, 94%);
+
+  @media (min-width: 990px) {
+    height: 100vh;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: hsl(200, 26%, 54%);
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 50px;
+  }
+
+  @media (min-width: 1400px) {
+    padding: 100px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

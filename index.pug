@@ -1,0 +1,78 @@
+doctype
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //- link(rel="icon", type="image/png", size="32x23", href="./assets/images/favicon-32x32.png")
+
+    //- link(rel="stylesheet", href="css/main.css")
+    include includes/links.pug
+    |
+    |
+    title Frontend Mentor | Mortgage repayment calculator
+
+  body
+    .Mortgage
+      .content
+        h2.content__title 
+          |Mortgage Calculator
+          |
+          span.button__clear Clear All
+
+        form
+          div
+            label(for="mor") Mortgage Amount
+            .inp
+              input(type="namber", name="Mortgage Amount" id="mor")
+              span £
+            p This Field is Required
+          div
+            label(for="ter") Mortgage Term
+            .inp
+              input(type="namber", name="Mortgage Amount" id="ter")
+              span Years
+            p This Field is Required
+          div
+            label(for="int") Interest Rate
+            .inp
+              input(type="namber", name="Mortgage Amount" id="int")
+              span %
+            p This Field is Required
+
+        form
+          span Mortgage Type
+          div
+            input(type="radio" name="ty" id="rep" checked)
+            |
+            |
+            span.custom-radio
+            label(for="rep") Repayment
+          div
+            input(type="radio" name="ty" id="inter")
+            |
+            |
+            span.custom-radio
+            label(for="inter") Interest Only
+
+        button.button__send
+          img(src="assets/images/icon-calculator.svg")
+          |Calculate Repayments
+      .content
+        |
+        |
+        img(src="assets/images/illustration-empty.svg", alt="image")
+        h2.content__title Results shown here
+        p Complete the form and click “calculate repayments” to see what
+          |your monthly repayments would be.
+
+  script(src="js/main.js")
+
+
+  //- div.attribution
+  //-   |Challenge by
+  //-   |
+  //-   a(href="https://www.frontendmentor.io?ref=challenge") Frontend Mentor.
+  //-   |
+  //-   |Coded by
+  //-   |
+  //-   a(href="#") Your Name Here.
